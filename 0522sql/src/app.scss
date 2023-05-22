@@ -1,0 +1,59 @@
+$btn-color : rgb(61, 61, 221);
+$green : rgb(19, 129, 19);
+
+.App {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: black;
+  }
+  
+  .header a {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .button {
+    box-sizing: border-box;
+
+    background-color: $btn-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    &:hover {
+        box-sizing: border-box;
+        padding: 3px 8px;
+        color : $btn-color;
+        background-color: transparent;
+        border: 2px solid $btn-color;
+    }
+}
+
+
+  .loginform-btn {
+    margin-top: 10px;
+  }
+  
+  .loginform-btn input[type=submit] {
+    background-color: $green;
+    margin-right: 10px;
+    &:hover {
+        color :$green;
+        background-color: transparent;
+        border: 2px solid $green;
+    }
+  }
